@@ -1,9 +1,3 @@
-了解しました 👍
-いただいた日本語の README を OSS 向けに自然な英語に整えました。
-そのまま README.md として利用できます。
-
-⸻
-
 Law & Policy Tracker (law-policy-tracker-v3)
 
 A PWA-enabled web application that aggregates and displays regulatory updates, public comments, and news from major jurisdictions (Japan, US, EU), including sources such as the SEC.
@@ -84,8 +78,3 @@ Legal & Privacy Considerations
 License
 
 This repository is licensed under the MIT License (see LICENSE).
-
-⸻
-
-👉 このREADMEは国際的に公開する場合にも自然に読める内容に調整しています。
-もし「学習用プロジェクトである」ことを明示したい場合、最後に Disclaimer セクションを追加しても良いですが、追加しますか？
