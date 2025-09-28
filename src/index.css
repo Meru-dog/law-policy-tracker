@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif; }
+  body { @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white; }
+}
+
+@layer components {
+  .glass-effect { @apply backdrop-blur-sm bg-white/5 border border-white/10; }
+  .card-hover { @apply transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-pink-500/20; }
+  .gradient-text { @apply bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent; }
+}
+
+@layer utilities {
+  .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+}
+
+

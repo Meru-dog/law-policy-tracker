@@ -1,0 +1,12 @@
+{
+  "name": "法律・政策情報トラッカー",
+  "short_name": "Law Tracker",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#ec4899",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
+
