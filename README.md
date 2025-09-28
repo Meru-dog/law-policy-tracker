@@ -1,17 +1,28 @@
-# 法律・政策情報トラッカー (law-policy-tracker-v3)
+了解しました 👍
+いただいた日本語の README を OSS 向けに自然な英語に整えました。
+そのまま README.md として利用できます。
 
-主要国（日本/米国/EU）の法令動向・パブコメ・規制ニュース・SEC等を横断表示する PWA 対応のWebアプリです。React + Vite + Tailwind + Framer Motion。
+⸻
 
-## 主な機能
-- 地域タブ（🇯🇵/🇺🇸/🇪🇺）とカテゴリで素早く絞込
-- RSS/JSON からの取得とプロキシを使った CORS フォールバック
-- スコアベース分類 + ノイズ除外（求人/イベント等）
-- 部分描画・バッチ取得で体感速度改善
-- PWA（インストール/オフライン一部キャッシュ）
-- エラーバウンダリ・ネットワーク復帰時の自動再取得
+Law & Policy Tracker (law-policy-tracker-v3)
 
-## ディレクトリ構成
-```
+A PWA-enabled web application that aggregates and displays regulatory updates, public comments, and news from major jurisdictions (Japan, US, EU), including sources such as the SEC.
+Built with React + Vite + Tailwind CSS + Framer Motion.
+
+⸻
+
+Features
+	•	Region tabs (🇯🇵 / 🇺🇸 / 🇪🇺) and category-based filtering
+	•	Data fetching from RSS/JSON with CORS fallback via proxy
+	•	Score-based classification with noise filtering (e.g., job postings, events)
+	•	Partial rendering and batched fetching for improved perceived performance
+	•	PWA support (installation and partial offline caching)
+	•	Error boundaries and auto-refetch on network recovery
+
+⸻
+
+Directory Structure
+
 .
 ├── public/
 │   ├── icon.svg
@@ -27,33 +38,54 @@
 ├── tailwind.config.js
 ├── vite.config.js
 └── .gitignore
-```
 
-## セットアップ
-```bash
+
+⸻
+
+Setup
+
 npm ci
 npm run dev
-```
-- ブラウザで `http://localhost:5173`（または表示されたURL）へ
 
-## ビルド
-```bash
+Then open the browser at http://localhost:5173 (or the URL shown in the terminal).
+
+⸻
+
+Build
+
 npm run build
-```
-- 生成物は `dist/`（Gitには含めません）
 
-## デプロイ
-- Netlify/Vercel などで「ビルドコマンド: `npm run build` / 公開ディレクトリ: `dist/`」
-- GitHub Pages の場合は `gh-pages` ブランチに `dist/` を公開（ソースブランチには含めない）
+The production build will be generated in the dist/ directory (not included in Git).
 
-## PWA
-- `public/manifest.json` と `public/sw.js` を同梱
-- 本番ドメインでアクセスすると「ホームに追加」等のインストールが可能
+⸻
 
-## 法的・プライバシー配慮
-- 取得先は公的機関/公式RSS/公開APIに限定
-- 取得データはクライアント側で一時処理し、個人情報の収集や送信は行いません
-- 利用規約やrobotsの変更に注意し、アクセス制御があるサイトにはアクセスしないでください
+Deployment
+	•	Netlify / Vercel:
+	•	Build command: npm run build
+	•	Publish directory: dist/
+	•	GitHub Pages:
+	•	Deploy the contents of dist/ to the gh-pages branch (do not commit dist/ to the source branch)
 
-## ライセンス
-- 本リポジトリは MIT ライセンスを予定（`LICENSE` 参照）
+⸻
+
+PWA
+	•	Includes public/manifest.json and public/sw.js
+	•	When accessed via a production domain, users can install the app via “Add to Home Screen” or equivalent
+
+⸻
+
+Legal & Privacy Considerations
+	•	Data sources are limited to official government sites, official RSS feeds, or public APIs
+	•	All fetched data is processed client-side only; no personal information is collected or transmitted
+	•	Be mindful of terms of use and robots.txt; do not access sites with restricted access controls
+
+⸻
+
+License
+
+This repository is licensed under the MIT License (see LICENSE).
+
+⸻
+
+👉 このREADMEは国際的に公開する場合にも自然に読める内容に調整しています。
+もし「学習用プロジェクトである」ことを明示したい場合、最後に Disclaimer セクションを追加しても良いですが、追加しますか？
